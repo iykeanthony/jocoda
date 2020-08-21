@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lobster", cursive;
+  background-color: #f3ecc2;
+  color: hsl(356, 77%, 61%);
+}
+
+.joke {
+  width: 80%;
+  margin: 1.5em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 5rem;
+  position: relative;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  width: 25%;
+  height: 0.05em;
+  bottom: 0.002em;
+  left: 1em;
+  background-color: white;
+}
+
+small {
+  font-size: 1.5rem;
+}
+
+button {
+  padding: 0.7em 4.5em;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.2rem;
+  margin-top: 3em;
+  background-color: #e8505b;
+  color: #f3ecc2;
+  border: none;
+}
+
+button:hover {
+  border: solid #f9d56e 0.1em;
+  /* box-shadow: 0 5px 2px black; */
+}
+
+.hidden {
+  display: none;
+}
+
+.joke-bubble {
+  display: inline-block;
+  position: relative;
+  padding: 3em 4em;
+  border-radius: 0.3em;
+  border: 0.3em solid white;
+  margin-bottom: 4em;
+  background-color: #f9d56e;
+  margin-top: 2em;
+  font-size: 1.35rem;
+}
+
+.joke-bubble:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  height: 50px;
+  width: 90px;
+  border-radius: 0 0 100%;
+  box-shadow: -2px -2px 0 0 white inset, -23px 0 0 0 #f9d56e inset,
+    -25px -2px 0 0 white inset;
+  margin-top: 1em;
+}
+
+.punchline {
+  color: #14b1ab;
+  font-size: 1.35rem;
+}
